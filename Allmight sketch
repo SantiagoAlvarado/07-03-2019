@@ -1,0 +1,25 @@
+var img;
+var a;
+function preload(){
+ img = loadImage('Allmight.jpg');
+}
+function setup() {
+  createCanvas(500, 500);
+  a = new Allmight();
+}
+
+function draw() {
+  background(220);
+  a.mostrar();
+  if(keyIsPressed && keyCode == RIGHT_ARROW){
+  a.derecha();
+  }
+  if(keyIsPressed && keyCode == LEFT_ARROW){
+  a.izquierda();
+  }if(keyIsPressed && keyCode == UP_ARROW){
+  a.arriba();
+  }if(keyIsPressed && keyCode == DOWN_ARROW){
+  a.abajo();
+  }
+  }
+  
